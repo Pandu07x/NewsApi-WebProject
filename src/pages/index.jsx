@@ -23,7 +23,7 @@ export default function Index(){
   
     
     useEffect(()=>{
-        axios.get(`https://newsapi.org/v2/top-headlines?country=in`,{headers:{
+        axios.get(`http://newsapi.org/v2/top-headlines?country=in`,{headers:{
             'x-api-key':"0e5277ff4d4f4cbe94ee3392225093fa"
         }}).then((res)=>{
             console.log(res.data)
